@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vijay.rockpaperscissor.PlayActivity"
+    android:id="@+id/PlayRelativeLayout"
+    android:background="#32a666"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/PlayMsgTv"
+        android:text="Select Your Move"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_below="@id/PlayImg1"
+        android:layout_marginTop="110dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/HomeImage"
+        android:src="@drawable/ic_account_balance_black_24dp"
+        android:background="#e7d5f1"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        />
+
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/ResetImage"
+        android:src="@drawable/ic_replay_black_24dp"
+        android:background="#e7d5f1"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/YourScoreTextView"
+        android:text="Your Score"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textColor="#960018"
+        android:layout_below="@id/HomeImage"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/CpuScoreTextView"
+        android:text="Cpu Score"
+        android:textStyle="bold"
+        android:textColor="#960018"
+        android:textSize="25sp"
+        android:layout_below="@id/ResetImage"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/YourPoints"
+        android:text="0"
+        android:textStyle="bold"
+        android:textSize="45sp"
+        android:textColor="#66FF00"
+        android:layout_below="@id/YourScoreTextView"
+        android:layout_marginTop="1dp"
+        android:layout_marginLeft="60dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/CpuPoints"
+        android:text="0"
+        android:textStyle="bold"
+        android:textSize="45sp"
+        android:textColor="#FF0800"
+        android:layout_below="@id/CpuScoreTextView"
+        android:layout_marginRight="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="1dp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/WinnerDeciderTextView"
+        android:text=""
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:textSize="45sp"
+        android:layout_below="@id/PlayImg1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/PlayImg1"
+        android:layout_below="@id/YourPoints"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/imgrock"
+        />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/PlayImg2"
+        android:layout_below="@id/CpuPoints"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/leftredrockimg"
+        android:layout_alignParentRight="true"
+        />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/RockButtonImg"
+        android:src="@drawable/imgrock"
+        android:layout_alignParentBottom="true"
+        />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/PaperButtonImg"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/yellowpaperimg"
+        android:layout_alignParentBottom="true"
+        />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/ScissorButtonImg"
+        android:src="@drawable/imgscisor"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        />
+
+</RelativeLayout>

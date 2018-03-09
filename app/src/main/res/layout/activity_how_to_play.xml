@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vijay.rockpaperscissor.HowToPlayActivity"
+    android:id="@+id/HTPRelativLayout"
+    android:background="#32a666"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:id="@+id/Rule1TV"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:text="1. Rock Smash Scissor"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        />
+
+    
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/Rule1RockIV"
+        android:src="@drawable/imgrock"
+        android:layout_below="@id/Rule1TV"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        />
+
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:id="@+id/Rule1RightScissorIV"
+        android:src="@drawable/leftblueimgscisor"
+        android:layout_below="@id/Rule1TV"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentRight="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/RockWinnerTV"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:text="Rock Win"
+        android:layout_below="@id/Rule1TV"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Rule2TV"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_below="@id/Rule1RockIV"
+        android:textColor="#FFFFFF"
+        android:text="2. Paper Wraps Rock"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        />
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/Rule2PaperIV"
+        android:src="@drawable/yellowpaperimg"
+        android:layout_below="@id/Rule2TV"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        />
+
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:id="@+id/Rule2RightRockIV"
+        android:src="@drawable/leftredrockimg"
+        android:layout_below="@id/Rule2TV"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentRight="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/PaperWinnerTV"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:text="Paper Win"
+        android:layout_below="@id/Rule2TV"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Rule3TV"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/Rule2PaperIV"
+        android:text="3. Scissor Cuts Paper"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/Rule3ScissorIV"
+        android:src="@drawable/imgscisor"
+        android:layout_below="@id/Rule3TV"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        />
+
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:id="@+id/Rule3RightPaperIV"
+        android:src="@drawable/leftyellowpaperimg"
+        android:layout_below="@id/Rule3TV"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentRight="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ScissorWinnerTV"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:text="Scissor Win"
+        android:layout_below="@id/Rule3TV"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Rule4TV"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/Rule3ScissorIV"
+        android:text="4. Same Shape Tie"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        />
+
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:id="@+id/Rule4SameIV"
+        android:src="@drawable/imgrock"
+        android:layout_below="@id/Rule4TV"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="5dp"
+        />
+
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:id="@+id/Rule4RightSameIV"
+        android:src="@drawable/leftredrockimg"
+        android:layout_below="@id/Rule4TV"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentRight="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/DrawTV"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:text="TIE"
+        android:layout_below="@id/Rule4TV"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        />
+
+</RelativeLayout>
